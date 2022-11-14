@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vehicle Performance Analyzer</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Vehicle Performance Analyzer</h1>
+        </header>
+        <div class="form-container">
+            <form action="/model" method="POST">
+                <div class="field">
+                    <label for="no_of_cylinders">
+                        <p class="cylinders field-name">Number of Cylinders</p>
+                    </label>
+                    <input type="number" id="no_of_cylinders input" name="no_of_cylinders">
+                </div>
+
+                <div class="field">
+                    <label for="displacement">
+                        <p class="displacement field-name">Displacement</p>
+                    </label>
+                    <input type="number" id="displacement input" name="displacement">
+                </div>
+
+                <div class="field">
+                    <label for="horsepower">
+                        <p class="horsepower field-name">Horse Power</p>
+                    </label>
+                    <input type="number" id="horsepower input" name="horsepower">
+                </div>
+
+                <div class="field">
+                    <label for="weight">
+                        <p class="weight field-name">Weight</p>
+                    </label>
+                    <input type="number" id="weight input" name="weight">
+                </div>
+
+                <div class="field">
+                    <label for="acceleration">
+                        <p class="acceleration field-name">Acceleration</p>
+                    </label>
+                    <input type="number" id="acceleration input" name="acceleration">
+                </div>
+
+                <div class="field">
+                    <label for="model_year">
+                        <p class="model_year field-name">Model Year</p>
+                    </label>
+                    <input type="number" id="model_year input" name="model_year">
+                </div>
+
+                <div class="field">
+                    <label for="origin">
+                        <p class="origin field-name">Origin</p>
+                    </label>
+                    <input type="number" id="origin input" name="origin">
+                </div>
+
+                <input type="submit" value="Predict" class="submit-btn btn">
+            </form>
+        </div>
+        <p class="result" id="result">{{Prediction}} <span class="answer">{{mpg}}</span></p>
+        <p class="makers" >Team: Aakriti, Abhishek, Hoo Dharshana, Jayapradhap </p>
+    </body>
+</html>
