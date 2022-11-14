@@ -52,8 +52,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8vh;
-    /* height: 92vh; */
+    padding: 5vh;
     min-height:max-content;
     color: #ffffff;
 }
@@ -76,21 +75,24 @@ form {
     border-radius:20px;
     border:none;
     display:block;
-    margin:50px auto;
+    margin:25px auto;
 }
 
 .result{
     text-align:center;
-    font-size:30px;
-    font-weight:bolder;
+    font-size:25px;
+    
     color:white;
+    margin-top: 0;
 }
 
 .answer{
     color:#ffffff;
+    font-weight:bolder;
 }
 
 .makers{
     text-align: center;
     color: white;
+    font-size:20px;
 }
